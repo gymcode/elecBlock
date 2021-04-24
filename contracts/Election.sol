@@ -1,4 +1,4 @@
-pragma solidity ^0.8.4;
+pragma solidity ^0.5.16;
 
 // declaring our contract 
 contract Election {
@@ -6,7 +6,7 @@ contract Election {
     //Read condidate
     string public candidate;
     //constructor 
-    function Elections () public {
+    function Election() public {
         candidate = "Candidate 1";
     }
 }
