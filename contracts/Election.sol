@@ -10,10 +10,19 @@ contract Election {
     }
 
     //store candidates
-    mapping(uint => Candidate) public candidates;
     //fetch candidates 
+    mapping(uint => Candidate) public candidates;
+
+    // store cadidates count (we wat to keep track of how may candidates exists)
+    uint public candidatesCount;
+    
 
     constructor() public{
         
+    }
+
+    function addCandidate(string _name) private {
+        candidatesCount++; // increament the candidate count
+        candidates[candidatesCount] = Candidate(candidatesCount, _name, 0)
     }
 }
