@@ -5,15 +5,15 @@ contract Election {
     //Model a candidate 
     struct Candidate {
         uint id; 
-        string name; ;
+        string name; 
         uint voteCount;
     }
 
     //store candidates
-    
+    mapping(uint => Candidate) public candidates;
     //fetch candidates 
 
     constructor() public{
-        candidate = "Candidate 1";
+        
     }
 }
