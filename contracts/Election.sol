@@ -6,7 +6,7 @@ contract Election {
     //Read condidate
     string public candidate;
     //constructor 
-    function Elections () public {
+    function Elections() public {
         candidate = "Candidate 1";
     }
 }
