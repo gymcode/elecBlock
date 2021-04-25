@@ -21,8 +21,8 @@ contract Election {
         
     }
 
-    function addCandidate(string _name) private {
+    function addCandidate() private {
         candidatesCount++; // increament the candidate count
-        candidates[candidatesCount] = Candidate(candidatesCount, _name, 0)
+        candidates[candidatesCount] = Candidate(candidatesCount, name, 0);
     }
 }
