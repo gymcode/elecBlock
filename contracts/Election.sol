@@ -18,11 +18,12 @@ contract Election {
     
 
     constructor() public{
-        
+        addCandidate("Candidate 1");
+        addCandidate("Candidate 2");
     }
 
-    function addCandidate() private {
+    function addCandidate(string memory _name) private {
         candidatesCount++; // increament the candidate count
-        candidates[candidatesCount] = Candidate(candidatesCount, name, 0);
+        candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
     }
 }
